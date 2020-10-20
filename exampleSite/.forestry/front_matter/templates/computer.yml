@@ -1,4 +1,30 @@
 ---
 label: Computer
 hide_body: true
-fields: []
+fields:
+- name: highlights
+  type: field_group_list
+  config:
+    min: 3
+    max: 3
+    labelField: 
+  label: highlights
+- name: computer
+  type: text
+  config:
+    required: true
+  label: Computer
+- name: computer1
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: computer1
+- name: url
+  type: text
+  config:
+    required: true
+  label: URL
